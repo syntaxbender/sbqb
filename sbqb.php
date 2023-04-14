@@ -21,9 +21,6 @@ class qb{
     private $order = null;
     private $limit = null;
     private $mode = null;
-    function __construct(){
-        
-    }
 
     public function table($tableName,$as = null){
         $this->table = ($as != null) ? self::AS($tableName,$as) : $tableName;
@@ -202,7 +199,7 @@ class qb{
                 .implode(" AND ",$this->conditions);
                 break;
         }
-        //$query = $this->mode." ".implode(", ",$this->fields)
+
         return $query;
     }
 }
