@@ -33,3 +33,6 @@ WHERE [condition];
 ```
 
 next release targets
+- optional schema checks
+- argument field validations
+- subquery support.
